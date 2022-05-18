@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cadastre-se</title>
+        <style>
+            *
+                {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: Helvetica;
+                    color: #323232;
+                    border: none;
+                }
+            input, label
+                {
+                    display: block;
+                    outline: none;
+                    width: 100%;
+                }
+            a
+                {
+                    color: #E60084;
+                }
+            body
+                {
+                    padding-top: 9vh;
+                    background-image: url("https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_960_720.jpg");
+                    background-size: cover;
+                }
+            #main-container
+                {
+                    background-image: url("https://cdn.pixabay.com/photo/2016/04/12/22/35/watercolour-1325656_960_720.jpg");
+                    width: 400px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 20px 30px;
+                    margin-top: 10vh;
+                    border-radius: 100px;
+                    text-align: center;
+                }
+            #main-container h1
+                {
+                    text-align: center;
+                    margin-bottom: 25px;
+                    font-size: 1.6rem;
+                }
+            form
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            .full-box
+                {
+                    flex: 1 1 100%;
+                    position: relative;
+                }
+            .half-box
+                {
+                    flex: 1 1 45%;
+                    position: relative;
+                }
+            .spacing
+                {
+                    margin-right: 2.5%;
+                }
+            label
+                {
+                    font-weight: bold;
+                    font-size: .8rem;
+                }
+            input
+                {
+                    border-radius: 90px;
+                    padding: 10px;
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            input:focus
+                {
+                    border-color: #08558B;
+                }
+            input[type="submit"]
+                {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    border: none;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin-top: 30px;
+                    color: #FFF;
+                    background-color: #b935ca;
+                    cursor: pointer;
+                    text-align: center;
+                }
+            input[type="submit"]:hover
+                {
+                    background-color: #83268f;
+                    transition: .5s;
+                }
+            #agreement
+                {
+                    margin-right: 5px;
+                }
+            #agreement, #agreement-label
+                {
+                    display: inline-block;
+                    width: auto;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Cadastre-se</h1>
+            <form id="register-form" action="">
+                <div class="full-box">
+                    <input type="email" name="email" id="email" placeholder="e-mail" data-min-length="2" data-email-validate>
+                    <br>
+                </div>
+                <div class="half-box spacing">
+                    <input type="text" name="name" id="name" placeholder="nome" data-required data-min-length="3" data-max-length="16">
+                </div>
+                <div class="half-box">
+                    <input type="text" name="lastname" id="lastname" placeholder="sobrenome" data-required data-only-letters>
+                    <br>
+                </div>
+                <div class="half-box spacing">
+                    <input type="password" name="password" id="password" placeholder="senha" data-password-validate data-required>
+                </div>
+                <div class="half-box">
+                    <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="senha novamente" data-equal="password">
+                    <br>
+                </div>
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+                </div>
+                <div class="full-box">
+                    <input id="btn-submit" type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
