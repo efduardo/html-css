@@ -92,6 +92,14 @@
                     background-color: #83268f;
                     transition: .5s;
                 }
+            input[type="email"]
+                {
+                    text-align: center;
+                }
+            input[type="password"]
+                {
+                    text-align: center;
+                }
             #register-container p
                 {
                     margin-bottom: 10px;
@@ -102,15 +110,13 @@
         <div id = "login-container">
             <h1>Login</h1>
             <form action = "">
-                <label for = "email">E-mail</label>
                 <input type = "email" name = "email" id = "email" placeholder = "Digite seu e-mail" autocomplete = "off">
-                <label for = "password">Senha</label>
+                <br><br>
                 <input type = "password" name = "password" id = "password" placeholder = "Digite sua senha">
-                <a href = "#" id = "forgot-pass">Esqueceu a senha?</a>
+                <a href = "#" id = "forgot-pass">Recuperar senha</a>
                 <input type = "submit" value = "Login">
             </form>
             <div id = "register-container">
-                <p>Ainda não tem uma conta?</p>
                 <a href = "#">Cadastrar</a>
             </div>
         </div>
