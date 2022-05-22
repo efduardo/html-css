@@ -73,16 +73,20 @@
             color: #FFF;
             background-color: #b935ca;
             cursor: pointer;
+            font-size: 15px;
         }
         input[type="submit"]:hover{
             background-color: #83268f;
-            transition: .5s;
+            font-size: large;
         }
         input[type="email"]{
             text-align: center;
         }
         input[type="password"]{
             text-align: center;
+        }
+        input:hover{
+            transition: .4s;
         }
         #register-container p{
             margin-bottom: 10px;
@@ -93,9 +97,9 @@
     <div id="login-container">
         <h1>Login</h1>
         <form action="">
-            <input type="email" name="email" id="email" placeholder="e-mail" autocomplete="off">
+            <input type="email" name="email" id="email" placeholder="e-mail" autocomplete="off" required>
             <br><br>
-            <input type="password" name="password" id="password" placeholder="senha">
+            <input type="password" name="password" id="password" placeholder="senha" required>
             <a href="#" id="forgot-pass">Recuperar senha</a>
             <input type="submit" value="Login">
         </form>
