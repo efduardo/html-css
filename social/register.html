@@ -87,7 +87,8 @@
         }
         input[type="submit"]:hover{
             background-color: #83268f;
-            transition: .5s;
+            transition: .4s;
+            font-size: large;
         }
         #agreement{
             margin-right: 5px;
@@ -103,25 +104,25 @@
         <h1>Cadastre-se</h1>
         <form id="register-form" action="">
             <div class="full-box">
-                <input type="email" name="email" id="email" placeholder="e-mail">
+                <input type="email" name="email" id="email" placeholder="e-mail" required>
                 <br>
             </div>
             <div class="half-box spacing">
-                <input type="text" name="name" id="name" placeholder="nome">
+                <input type="text" name="name" id="name" placeholder="nome" required>
             </div>
             <div class="half-box">
-                <input type="text" name="lastname" id="lastname" placeholder="sobrenome">
+                <input type="text" name="lastname" id="lastname" placeholder="sobrenome" required>
                 <br>
             </div>
             <div class="half-box spacing">
-                <input type="password" name="password" id="password" placeholder="senha">
+                <input type="password" name="password" id="password" placeholder="senha" required>
             </div>
             <div class="half-box">
-                <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="senha novamente" data-equal="password">
+                <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="senha novamente" data-equal="password" required>
                 <br>
             </div>
             <div>
-                <input type="checkbox" name="agreement" id="agreement">
+                <input type="checkbox" name="agreement" id="agreement" required>
                 <label for="agreement" id="agreement-label">Li e aceito os <a href="#">termos de uso</a></label>
             </div>
             <div class="full-box">
