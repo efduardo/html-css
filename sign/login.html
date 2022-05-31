@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+            color: #323232;
+            border: none;
+        }
+        body{
+            background-image: url("https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_960_720.jpg");
+            background-size: cover;
+        }
+        textarea:focus, input:focus{
+            outline: none;
+        }
+        a, label{
+            font-size: .8rem;
+        }
+        a:hover{
+            color: #08558B;
+        }
+        #login-container{
+            background-image: url("https://cdn.pixabay.com/photo/2016/04/12/22/35/watercolour-1325656_960_720.jpg");
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 30px;
+            margin-top: 20vh;
+            border-radius: 100px;
+            text-align: center;
+        }
+        #login-container:hover{
+            transition: 0.1s;
+            box-shadow: 1px 1px 0px turquoise;
+        }
+        form{
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        label, input{
+            display: black;
+            width: 100%;
+            text-align: left;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            border-radius: 90px;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        input:focus{
+            text-align: 2px solid #08558B;
+        }
+        #forgot-pass{
+            text-align: right;
+            display: block;
+        }
+        input[type="submit"]{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            height: 40px;
+            border-radius: 20px;
+            margin-top: 30px;
+            color: #FFF;
+            background-color: #b935ca;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        input[type="submit"]:hover{
+            background-color: #83268f;
+            font-size: large;
+            transition: .4s;
+        }
+        input[type="email"]{
+            text-align: center;
+        }
+        input[type="email"]:hover{
+            transition: 0.1;
+            box-shadow: 1px 1px 0px whitesmoke;
+        }
+        input[type="password"]{
+            text-align: center;
+        }
+        input[type="password"]:hover{
+            transition: 0.1s;
+            box-shadow: 1px 1px 0px whitesmoke;
+        }
+        #register-container p{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="e-mail" autocomplete="off" required>
+            <br><br>
+            <input type="password" name="password" id="password" placeholder="senha" required>
+            <a href="#" id="forgot-pass">Recuperar senha</a>
+            <input type="submit" value="Login">
+        </form>
+        <div id="register-container">
+            <a href="register.html">Cadastrar</a>
+        </div>
+    </div>
+</body>
+</html>
