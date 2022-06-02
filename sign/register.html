@@ -33,7 +33,7 @@
             margin-left: auto;
             margin-right: auto;
             padding: 20px 30px;
-            margin-top: 10vh;
+            margin-top: 5.5vh;
             border-radius: 100px;
             text-align: center;
         }
@@ -117,11 +117,15 @@
             display: inline-block;
             width: auto;
         }
+	a.noRegister{
+	    text-decoration: none;
+	    font-size: small;
+	}
         a.already{
             font-size: .8rem;
             margin-bottom: 10px;
         }
-        a.already:hover{
+        a.already:hover, a.noRegister:hover{
             color: #08558B;
         }
     </style>
@@ -157,6 +161,8 @@
             </div>
         </form>
         <div>
+	    <a class="noRegister" href="../index.html">Continuar sem registrar</a>
+	    <br><br>
             <a class="already" href="login.html">Já tenho uma conta</a>
         </div>
     </div>
