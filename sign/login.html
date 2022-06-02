@@ -98,6 +98,9 @@
             transition: 0.1s;
             box-shadow: 1px 1px 0px whitesmoke;
         }
+	    .noLogin{
+	        text-decoration: none;
+	    }
         #register-container p{
             margin-bottom: 10px;
         }
@@ -112,6 +115,7 @@
             <input type="password" name="password" id="password" placeholder="senha" required>
             <a href="#" id="forgot-pass">Recuperar senha</a>
             <input type="submit" value="Login">
+	    <a class="noLogin" href="../index.html">Continuar sem login</a>
         </form>
         <div id="register-container">
             <a href="register.html">Cadastrar</a>
