@@ -77,7 +77,6 @@ div.newPost div.infoUser div.imgUser{
 }
 div.newPost div.infoUser strong{
     font-size: 16px;
-    color:#23a0ff;
     margin-left: 10px;
 }
 div.newPost form.formPost{
@@ -95,7 +94,7 @@ div.newPost form.formPost textarea{
     height: 90px;
     outline: none;
     font-weight: bold;
-    color:#727272;
+    color: #727272;
     font-family: 'Roboto', sans-serif;
     border: 2px solid #fff;
 }
